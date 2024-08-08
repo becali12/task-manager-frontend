@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import TasksPage from './pages/TasksPage';
-import SignInPage from './pages/SignInPage';
+import SignUpPage from './pages/SignUpPage';
+import LogInPage from './pages/LogInPage';
 
 function App() {
   return (
     <div>
-      <SignInPage/>
+      <LogInPage/>
     </div>
   );
 }
