@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.navbar {
+    background-color: #6c757d;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    padding: 0 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #e0e0e0;
+}
+
+.navbar-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-left: 1rem;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.navbar-list a {
+    color: #ffd700;
+}
+
+.navbar-list li {
+    margin-left: 1.875rem;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 0.625rem;
+    transition: background-color 0.3s, transform 0.3s;
+    color: #ffd700;
+}
+
+.navbar-list li:hover {
+    background-color: #243232;
+    transform: scale(1.05);
+}
+
+.navbar-logo {
+    height: 80%;
+}
