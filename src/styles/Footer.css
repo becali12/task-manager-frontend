@@ -1,0 +1,12 @@
+
+.footer {
+    background-color: #303539;
+    display: flex;
+    height: 3rem;
+}
+
+.footer p {
+    margin: auto;
+    color: rgb(216, 216, 216);
+    font-size: small;
+}

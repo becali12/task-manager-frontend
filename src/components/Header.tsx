@@ -9,9 +9,9 @@ function Header() {
             <img src={logo} alt='iTasks' className='navbar-logo'/>
             <Link to="/" className='navbar-title'>iTasks</Link>
             <ul className='navbar-list'>
-                <li><Link to="/signup">Sign Up</Link></li>
-                <li><Link to="/login">Log In</Link></li>
                 <li><Link to="/tasks">My Tasks</Link></li>
+                <li><Link to="/login">Log In</Link></li>
+                <li><Link to="/signup">Sign Up</Link></li>
             </ul>
         </nav>
     );

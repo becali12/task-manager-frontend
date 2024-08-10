@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 .navbar {
-    background-color: #6c757d;
+    background-color: #303539;
     display: flex;
     align-items: center;
-    height: 7rem;
+    height: 5rem;
     padding: 0 30px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .navbar a:hover {
-    color: #e0e0e0;
+    color: #eeff00;
 }
 
 .navbar-title {
@@ -47,7 +47,7 @@
 }
 
 .navbar-list li:hover {
-    background-color: #243232;
+    background-color: #3c4247;
     transform: scale(1.05);
 }
 
