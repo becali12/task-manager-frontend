@@ -14,7 +14,7 @@ const handleAddUser = async () => {
 
 function TasksPage() {
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
         <button style={{margin: "auto"}} onClick={handleAddUser}>Add user</button>
       </div>
     );

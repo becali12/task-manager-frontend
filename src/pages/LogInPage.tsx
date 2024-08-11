@@ -52,7 +52,7 @@ function SignInPage() {
                         type="password"
                     />
                     <button type="submit">Submit</button>
-                    <span>Don't have an account? <a href='www.google.com'> Sign up here</a>.</span>
+                    <span>Don't have an account? <a href='/signup'> Sign up here</a>.</span>
                 </form>
             </div>
         </div>

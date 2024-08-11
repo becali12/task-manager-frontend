@@ -76,7 +76,7 @@ function SignUpPage() {
                         type="password"
                     />
                     <button type="submit">Submit</button>
-                    <span>Already have an account? <a href='www.google.com'> Sign in</a> instead.</span>
+                    <span>Already have an account? <a href='/login'> Sign in</a> instead.</span>
                 </form>
             </div>
         </div>

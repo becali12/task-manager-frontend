@@ -7,3 +7,7 @@
 .app-content {
   flex: 1;
 }
+
+#root {
+  background: rgb(255, 226, 171);
+}

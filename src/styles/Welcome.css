@@ -1,0 +1,35 @@
+.welcome-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.welcome-content {
+    color: #333;
+    height: 250px;
+    padding: 10px 30px 10px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 80%;
+    font-size: large;
+}
+
+.welcome-content p {
+    margin-top: 30px;
+}
+
+.welcome-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
