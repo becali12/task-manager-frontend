@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/SignIn.css';
+import { User } from '../utils/types'
+import { addUserToDB } from '../utils/apiHandler'
 
 function SignUpPage() {
     // form variables
@@ -13,6 +15,17 @@ function SignUpPage() {
 
     const ErrorMessage = () => <div>error</div>;
     const SuccessMessage = () => <div>success</div>;
+
+    const TEST_USER : User = {
+        firstName: 'Cristi',
+        lastName: 'Nelu',
+        createdAt: Date.now()
+      }
+      
+      const handleAddUser = async () => {
+        await addUserToDB(TEST_USER);
+      }
+
 
     const handleFirstName = (e : React.ChangeEvent<HTMLInputElement>) => {
         setFirstName(e.target.value);

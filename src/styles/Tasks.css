@@ -1,0 +1,14 @@
+
+.task-categories-container {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    margin: auto;
+    height: 80%;
+    width: 70%;
+    padding: 20px;
+}
+
+.task-categories-list {
+    font-size: large;
+}

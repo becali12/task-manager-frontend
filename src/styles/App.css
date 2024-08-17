@@ -5,7 +5,10 @@
 }
 
 .app-content {
+  display: flex;
+  flex-direction: row;
   flex: 1;
+  overflow-y: auto;
 }
 
 #root {
