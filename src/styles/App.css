@@ -9,6 +9,7 @@
   flex-direction: row;
   flex: 1;
   overflow-y: auto;
+  justify-content: center;
 }
 
 #root {

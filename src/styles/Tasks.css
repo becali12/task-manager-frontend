@@ -9,6 +9,13 @@
     padding: 20px;
 }
 
+.task-categories-container h1 {
+    text-align: center;
+}
+
 .task-categories-list {
+    display: flex;
+    flex-direction: row;
     font-size: large;
+    justify-content: center;
 }
