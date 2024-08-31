@@ -11,8 +11,10 @@ export interface Category {
 }
 
 export interface CategoryCardProps {
-    category: string;
-    taskCount: number;
-    createdDate: string;
+    category?: string;
+    isCreateCategoryCard: boolean;
+    taskCount?: number;
+    createdDate?: string;
+    categoriesNumber: number;
     onChoose: () => void;
   }

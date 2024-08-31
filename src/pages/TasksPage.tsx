@@ -6,21 +6,22 @@ import { Category } from '../utils/types';
 function TasksPage() {
 
   const [categories, setCategories] = useState<Category[]>([]);
-  const [showAddCategory, setShowAddCategory] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState<number|null>(null);
-
-  // maybe add category option should be already present if 0 categories exist
-  const handleAddCategory = () => {
-    setShowAddCategory(true);
-  }
+  const [isCategorySelected, setIsCategorySelected] = useState(false);
+  const [showCreateCategory, setShowCreateCategory] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<number>(-1);
 
   const handleChosenCategory = (index : number) => {
     setSelectedCategory(index);
     console.log('Selected category with index ', index);
   }
 
+  const handleCreateCategory = () => {
+    setShowCreateCategory(!showCreateCategory);
+    console.log('Toggle activated');
+  }
+
   const renderedCategories = categories.map((category, index) => (
-    <CategoryCard key={index} category={category.name} taskCount={category.taskCount} createdDate={category.createdDate} onChoose={() => handleChosenCategory(index)} />
+    <CategoryCard key={index} categoriesNumber={categories.length} category={category.name} taskCount={category.taskCount} createdDate={category.createdDate} isCreateCategoryCard={false} onChoose={() => handleChosenCategory(index)} />
   ));
 
   useEffect(() => {
@@ -41,14 +42,14 @@ function TasksPage() {
           </div>
         }
         {
-        categories.length > 0 && !selectedCategory &&
-        <div> <h1>Choose a category to get started</h1> 
-          <div className='task-categories-list'>
-              { renderedCategories }
+        selectedCategory < 0 &&
+          <div> <h1>Choose a category to get started</h1> 
+              <div className='task-categories-list'>
+                <CategoryCard categoriesNumber={categories.length} isCreateCategoryCard={true} onChoose={handleCreateCategory}/>
+                {renderedCategories}
+              </div>
           </div>
-        </div>
-      }
-      {/* TODO: add a category card for creating a new category */}
+        }
       </div>
     );
   }
